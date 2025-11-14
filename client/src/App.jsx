@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   const [message, setmessage] = useState("");
   useEffect(() => {
-fetch("http://localhost:4000/api/message").then((res)=>res.json())
+fetch("http://72.61.114.23:4000/api/message").then((res)=>res.json())
 .then((data)=>setmessage(data)).catch((err)=> console.log(err))
   }, [])
   
